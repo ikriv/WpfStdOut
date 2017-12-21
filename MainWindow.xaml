@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <DockPanel LastChildFill="True">
+            <Label DockPanel.Dock="Top">Text to output:</Label>
+            <Button DockPanel.Dock="Bottom" HorizontalAlignment="Right" 
+                    Margin="5" MinWidth="100" Click="Button_Click">Go for it!</Button>
+            <TextBox Name="OutputTextBox" AcceptsReturn="True"/>
+        </DockPanel>
         
     </Grid>
 </Window>
